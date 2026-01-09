@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial;
+}
+
+body{
+    background: url("https://plus.unsplash.com/premium_photo-1673697239984-b089baf7b6e6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center/cover;
+    height:100vh;
+}
+
+body::before{
+    content:""; 
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+    z-index:-1; 
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+}
+
+.logo span{
+    color:orange;
+}
+nav a{
+    margin:0 15px;
+    text-decoration:none;
+    color:white;
+    font-size:16px;
+    letter-spacing:1px;
+}
+
+nav a:hover{
+    color:rgba(161, 202, 212, 0.751);
+}
+
+.search-box input{
+    padding:8px 15px;
+    border:none;
+    border-radius:20px;
+    outline:none;
+}
+
+.hero{
+    height:85vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:rgb(240, 233, 233);
+}
+
+.hero h1{
+    font-size:70px;
+    letter-spacing:5px;
+    margin-bottom:30px;
+}
+
+.buttons .btn{
+    display:inline-block;
+    padding:12px 30px;
+    margin:10px;
+    border:2px solid white;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.buttons .btn:hover{
+    background:orange;
+    border-color:rgb(224, 183, 108);
+}
